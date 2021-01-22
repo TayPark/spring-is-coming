@@ -1,5 +1,6 @@
 package hellospring.springiscoming;
 
+import hellospring.springiscoming.aop.TimeTraceAop;
 import hellospring.springiscoming.repository.JdbcTemplateMemberRepository;
 import hellospring.springiscoming.repository.JpaMemberRepository;
 import hellospring.springiscoming.repository.MemberRepository;
@@ -48,5 +49,10 @@ public class SpringConfig {
 //        return new MemoryMemberRepository();
 //        return new JdbcTemplateMemberRepository(dataSource);
 //        return new JpaMemberRepository(em);
+//    }
+
+//    @Bean
+//    public TimeTraceAop timeTraceAop() {
+//        return new TimeTraceAop();
 //    }
 }
